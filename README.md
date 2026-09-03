@@ -35,6 +35,10 @@ The browser implementation preserves the original rules: geodesic-style GPS dist
 
 No GPX files or database credentials are uploaded or stored by the client-only dashboard.
 
+## Strava import
+
+The GPX uploader accepts files exported directly from Strava. Open a Strava activity, choose the activity menu, select **Export GPX**, then upload the downloaded file. Analysis runs locally with the same GPX pipeline. Direct Strava account OAuth is not enabled because it requires a server-side Strava app client secret and callback configuration.
+
 ## Project structure
 
 ```text
@@ -42,5 +46,7 @@ src/App.jsx    Dashboard, GPX parser, cleaning, and metrics
 src/App.css    Responsive visual design
 src/index.css  Global styles and typography
 ```
+
+See [USAGE.md](USAGE.md) for the complete user guide.
 
 MIT licensed.
